@@ -1,6 +1,14 @@
 # DEVELOPMENT INVENTORY — Shronda Studio AI
 
-_Generated 2026-11-02 during workspace migration. No files were committed or pushed._
+_Snapshot generated 2026-11-02 at migration time. See the post-migration update below for the owner-approved cleanup and current Git state._
+
+## Post-migration update (2026-11-02)
+
+- Local cleanup commit created on `main`; nothing was pushed.
+- Removed tracked `.vs/` IDE state, `index.html.local-backup`, `src/main.rs.backup`, `index-changes.patch`, and zero-byte `dir`, `git`, `main)`.
+- Removed an exposed `HIVE_API_KEY` line from `.gitignore`; the owner reports the key was rotated. The old value remains in Git history.
+- Added ignore rules for regenerated IDE/backup artifacts.
+- The working tree is clean and the branch is ahead of `origin/main` by the local cleanup commit(s).
 
 ## Overview
 
@@ -34,7 +42,7 @@ Runtime requirements: `HIVE_API_KEY` must be set (for example in a local `.env` 
 
 - No `.env` or `.env.example` is present in the repository.
 - Referenced variables: `HIVE_API_KEY` (required), `PORT` (optional, default 5500).
-- `.gitignore` exists; no secrets are tracked.
+- `.gitignore` exists; a previously tracked key line was removed during cleanup and the owner reports the key was rotated.
 
 ## Important files
 
@@ -44,11 +52,7 @@ Runtime requirements: `HIVE_API_KEY` must be set (for example in a local `.env` 
 
 ## Duplicates / potentially obsolete files
 
-- `index.html` and `index.html.local-backup` are **byte-identical**.
-- `src/main.rs.backup` differs from `src/main.rs` and is a stale backup.
-- `index-changes.patch` — leftover patch artifact.
-- Zero-byte accidental files: `dir`, `git`, `main)`.
-- `.vs/` (about 2.6 MB) is **tracked in Git**; it is IDE state, not source.
+- Resolved during cleanup: `index.html.local-backup`, `src/main.rs.backup`, `index-changes.patch`, zero-byte `dir`, `git`, `main)`, and tracked `.vs/` (about 2.6 MB) were removed. They remain in Git history.
 
 ## Missing files / dependencies
 
@@ -84,7 +88,8 @@ _Excluded from display: `.git` internals, IDE caches, dependency caches, build o
 ## Uncommitted local work
 
 ```text
-## main...origin/main
-?? DEVELOPMENT-INVENTORY.md
+## main...origin/main [ahead of origin by local cleanup commit(s)]
 ```
+
+Working tree is clean.
 
