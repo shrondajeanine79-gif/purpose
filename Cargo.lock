@@ -790,6 +790,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "purpose"
+version = "0.1.0"
+dependencies = [
+ "axum",
+ "dotenvy",
+ "reqwest",
+ "serde",
+ "serde_json",
+ "tokio",
+ "tower-http",
+]
+
+[[package]]
 name = "quinn"
 version = "0.11.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1119,19 +1132,6 @@ name = "shlex"
 version = "2.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f8fadd59c855ef2080decdef8ff161eb6661b86933c9d82e5ba29dc602a55aba"
-
-[[package]]
-name = "shronda-studio-ai"
-version = "0.1.0"
-dependencies = [
- "axum",
- "dotenvy",
- "reqwest",
- "serde",
- "serde_json",
- "tokio",
- "tower-http",
-]
 
 [[package]]
 name = "simdutf8"

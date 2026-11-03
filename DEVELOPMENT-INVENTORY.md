@@ -1,9 +1,11 @@
-# DEVELOPMENT INVENTORY — Shronda Studio AI
+# DEVELOPMENT INVENTORY — Purpose
 
 _Snapshot generated 2026-11-02 at migration time. See the post-migration update below for the owner-approved cleanup and current Git state._
 
 ## Post-migration update (2026-11-02)
 
+- Renamed from Shronda Studio AI to **Purpose**; the local folder and GitHub repository are now named `purpose`, and the Cargo package is `purpose`.
+- The Render API endpoint remains `https://shronda-studio-ai.onrender.com/api/chat` until that deployment is renamed.
 - Local cleanup commit created on `main`; the commits were pushed to origin on 2026-11-02.
 - Removed tracked `.vs/` IDE state, `index.html.local-backup`, `src/main.rs.backup`, `index-changes.patch`, and zero-byte `dir`, `git`, `main)`.
 - Removed an exposed `HIVE_API_KEY` line from `.gitignore`; the owner reports the key was rotated. The old value remains in Git history.
@@ -14,11 +16,11 @@ _Snapshot generated 2026-11-02 at migration time. See the post-migration update 
 
 | Field | Value |
 |---|---|
-| Project | Shronda Studio AI |
+| Project | Purpose |
 | Purpose | Rust/Axum web application that serves a creative-workspace frontend and proxies chat requests to the Hive AI API. |
-| GitHub | https://github.com/shrondajeanine79-gif/shronda-studio-ai.git |
+| GitHub | https://github.com/shrondajeanine79-gif/purpose.git |
 | Visibility | PUBLIC |
-| Local path | /home/shr/Projects/01-AI-PROJECTS/Shronda-Studio-AI |
+| Local path | /home/shr/Projects/01-AI-PROJECTS/Purpose |
 | Active branch | main |
 | Local commit | `990e4cf` (990e4cf676a8f820f3983714601c28210aa0d9bd) |
 | Upstream | origin/main |
@@ -30,7 +32,7 @@ _Snapshot generated 2026-11-02 at migration time. See the post-migration update 
 ## Build / Test / Run
 
 ```bash
-cd /home/shr/Projects/01-AI-PROJECTS/Shronda-Studio-AI
+cd /home/shr/Projects/01-AI-PROJECTS/Purpose
 cargo build
 cargo run                       # serves on PORT, default 5500
 cargo test                       # no test modules present

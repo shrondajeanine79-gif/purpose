@@ -123,7 +123,7 @@ async fn run() -> Result<(), Box<dyn std::error::Error>> {
 }
 
 async fn health() -> &'static str {
-    "Shronda Studio AI is running."
+    "Purpose is running."
 }
 
 async fn chat(
@@ -160,7 +160,7 @@ async fn chat(
             "messages": [
                 {
                     "role": "system",
-                    "content": "You are the AI assistant for Shronda Studio AI. Help with content creation, writing, brainstorming, brand development, and organizing ideas. Follow the user's instructions and provide complete, useful answers."
+                    "content": "You are the AI assistant for Purpose. Help with content creation, writing, brainstorming, brand development, and organizing ideas. Follow the user's instructions and provide complete, useful answers."
                 },
                 {
                     "role": "user",
