@@ -4,11 +4,11 @@ _Snapshot generated 2026-11-02 at migration time. See the post-migration update 
 
 ## Post-migration update (2026-11-02)
 
-- Local cleanup commit created on `main`; nothing was pushed.
+- Local cleanup commit created on `main`; the commits were pushed to origin on 2026-11-02.
 - Removed tracked `.vs/` IDE state, `index.html.local-backup`, `src/main.rs.backup`, `index-changes.patch`, and zero-byte `dir`, `git`, `main)`.
 - Removed an exposed `HIVE_API_KEY` line from `.gitignore`; the owner reports the key was rotated. The old value remains in Git history.
 - Added ignore rules for regenerated IDE/backup artifacts.
-- The working tree is clean and the branch is ahead of `origin/main` by the local cleanup commit(s).
+- The working tree is clean and the branch is up to date with `origin/main`.
 
 ## Overview
 
@@ -88,7 +88,7 @@ _Excluded from display: `.git` internals, IDE caches, dependency caches, build o
 ## Uncommitted local work
 
 ```text
-## main...origin/main [ahead of origin by local cleanup commit(s)]
+## main...origin/main [up to date with origin]
 ```
 
 Working tree is clean.
